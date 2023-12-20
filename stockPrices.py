@@ -1,6 +1,6 @@
 # Question
 # Consider a scenario where you have been given a list of integers representing the daily stock prices of a company for a given period.
-# You are also provided with a set or dictionary of stock prices for the same period. You are required to implement a program that performs the following tasks:
+# You are also provided with a set of stock prices for the same period. You are required to implement a program that performs the following tasks:
 
 
 stock_prices_list = [50, 55, 60, 54, 92]
@@ -40,7 +40,7 @@ def countOccurrences(stock_prices_list, target_price):
 
 # Write a function, computeCumulativeSum, that takes the set or dictionary of stock prices as input and returns a new set or dictionary containing
 # the cumulative sum of prices at each position.
-def computeCumulativeSum(stock_prices_set):
+def getCumulativeSum(stock_prices_set):
 
     if not stock_prices_set:
         return {}
@@ -58,4 +58,4 @@ print("Average Price", calculateAveragePrice(stock_prices_list))
 print("Maximum Price", findMaximumPrice(stock_prices_list))
 target_price = 60
 print("count Occurrences", countOccurrences(stock_prices_list, target_price))
-print("Computed Sum", computeCumulativeSum(stock_prices_set))
+print("Computed Sum", getCumulativeSum(stock_prices_set))
